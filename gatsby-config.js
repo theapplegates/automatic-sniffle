@@ -21,24 +21,6 @@ module.exports = {
           maxWidth: 800,
           wrapperStyle: fluidResult => `flex:${_.round(fluidResult.aspectRatio, 2)};`,
         },
-    {
-      resolve: 'kontent-used-by-content-items', // local plugin
-      options: {
-        links: [
-          {
-            parentTypeCodename: 'article',
-            childTypeCodename: 'tag',
-            linkedElementCodename: 'tags',
-            backReferenceName: 'used_by_articles',
-          },
-          {
-            parentTypeCodename: 'article',
-            childTypeCodename: 'category',
-            linkedElementCodename: 'category',
-            backReferenceName: 'used_by_articles',
-          },
-        ],
-      },
     },
     'gatsby-plugin-sharp',
     // {

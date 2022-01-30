@@ -29,6 +29,7 @@
     "@kentico/gatsby-kontent-components": "^6.0.0",
     "@kentico/gatsby-source-kontent": "^7.2.0",
     "@kentico/kontent-smart-link": "^2.1.0",
+    "gatsby-remark-images": "^6.6.0",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-helmet": "^5.2.0"
