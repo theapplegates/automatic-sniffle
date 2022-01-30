@@ -14,6 +14,14 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-remark-images`,
+        options: {
+          withAvif: true, 
+          withWebp: true,
+          maxWidth: 800,
+          wrapperStyle: fluidResult => `flex:${_.round(fluidResult.aspectRatio, 2)};`,
+        },
+      }
       resolve: '@kentico/gatsby-source-kontent',
       options: {
         projectId: process.env.KONTENT_PROJECT_ID, // Fill in your Project ID
